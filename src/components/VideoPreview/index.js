@@ -13,10 +13,10 @@ export default function VideoPreview({ idVideo, priority = false, idChannel, cha
   }, [])
 
   return (
-    <Link href={`/video/${idVideo}`}>
+    <Link href={`/video/${idVideo}`} className='hover:scale-[1.03] transition-transform'>
       <div className='group flex flex-col w-full overflow-hidden rounded-2xl gap-2'>
         <div className='before:block before:w-full before:pt-[56.25%] bg-black overflow-hidden relative rounded-2xl'>
-          <Image priority={priority} className='group-hover:opacity-60 absolute top-0 object-cover w-full' src={url} width={width} height={height} alt={`profile picture of ${channelTitle}`} />
+          <Image priority={priority} className='group-hover:opacity-70 transition-opacity absolute top-0 object-cover w-full' src={url} width={width} height={height} alt={`profile picture of ${channelTitle}`} />
         </div>
         <div className='flex gap-2'>
           <div className='flex-[0_0_auto]'>
