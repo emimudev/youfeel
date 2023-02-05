@@ -5,6 +5,7 @@ import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page)
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ export default function App({ Component, pageProps }) {
         }
       `}
       </style>
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </>
   )
 }

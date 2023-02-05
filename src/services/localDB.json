@@ -1,0 +1,1712 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "OM_2IfBwSKSWLsHsFPLCEtVibrk",
+  "nextPageToken": "CDIQAA",
+  "regionCode": "CR",
+  "pageInfo": {
+    "totalResults": 2533,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "mmPxBZmBsGMBqUdO7n5Q36Y6cFY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "jKdt-BnTTR0"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-29T15:30:09Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Principios SOLID en React.js (Buenas prácticas) con ejemplos prácticos",
+        "description": "En ingeniería de software, SOLID es un acrónimo mnemónico introducido por Robert C. Martin​a comienzos de la década del ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jKdt-BnTTR0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jKdt-BnTTR0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jKdt-BnTTR0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-29T15:30:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IMPecBG7OvGm1ExCYI_xfxkbIxg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Jng49-yFgWw"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-19T19:00:10Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¡RESUELVO la PRUEBA TÉCNICA de UBER! Lógica de programación con JavaScript",
+        "description": "Resolvemos una de las pruebas técnicas de Uber para programadores Junior con JavaScript. Es una prueba sencilla que te ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Jng49-yFgWw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Jng49-yFgWw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Jng49-yFgWw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-19T19:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "x2h_DFCk39QV3bMBQ4ytq1G79JE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Sko0-qSRRfU"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-08T16:00:12Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Simulacro de prueba técnica de React para Junior y Trainee",
+        "description": "Hacemos una prueba técnica para REACT real para perfiles Junio y Trainee! Gracias a David Huertas por animarse a pasar el ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Sko0-qSRRfU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Sko0-qSRRfU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Sko0-qSRRfU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-08T16:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "EcYUuOxjjCd5EiuHhiQvmYamusI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "YLvT1ELnaX4"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-05T17:11:46Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Aprendiendo Javascript y React desde cero - Bootcamp FullStack Gratuito",
+        "description": "Segunda clase del Bootcamp FullStack gratuito para ver qué es Javascript, algunas de sus características e iniciarnos en React.js ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YLvT1ELnaX4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YLvT1ELnaX4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YLvT1ELnaX4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-05T17:11:46Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pNB_aeu5oWM36cYX9KkTvLoWfJY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dm7nfe3bOE4"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-16T16:15:04Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Crea un clon de Minecraft con Javascript, React y Three.js",
+        "description": "Creamos paso a paso un clon de Minecraft usando tecnologías web. ¡Es jugable e interactivo! Añadimos algunas texturas para ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dm7nfe3bOE4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dm7nfe3bOE4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dm7nfe3bOE4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-16T16:15:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ei07IfxG1kfl1-Pl67N96w_MLSQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qi87b6VcIHY"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-20T15:00:34Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "📘 CURSO REACT NATIVE desde CERO - Creamos una app paso a paso",
+        "description": "React Native te permite desarrollar una aplicación para iOS, Android y Web, compartiendo el código entre los diferentes ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qi87b6VcIHY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qi87b6VcIHY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qi87b6VcIHY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-20T15:00:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "yhxdHnifyZzIyBa1tey4Uu62Hu8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ILS4yYrxY6s"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-25T17:30:12Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Mis DESASTROSOS inicios en la PROGRAMACIÓN 😱 - ¿No sirvo para programar? (Experiencia REAL)",
+        "description": "Te voy a contar mi historia de cómo empecé en la programación. No fue bien. Pero aquí estoy, 15 años después, siendo una de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ILS4yYrxY6s/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ILS4yYrxY6s/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ILS4yYrxY6s/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-25T17:30:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "uWdamT-ttlX3EDAOHSbGkk0hNfo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8EKyHd4sjB4"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-28T17:00:06Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "STATE OF CSS  - ¡Las novedades de CSS para 2023! con Teff Code y Carmen Ansio",
+        "description": "Revisamos con Teff Code y Carmen Ansio todas las novedades del State of CSS 2022! ▷ No te pierdas más directos en: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8EKyHd4sjB4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8EKyHd4sjB4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8EKyHd4sjB4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-28T17:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Dh8aFsPO9cz_iD7CJZkt5_MwSnA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "uyEUVgNMvGI"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-17T19:00:06Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "¡Necesitas cambiar estas configuraciones de Visual Studio Code!",
+        "description": "No dejes Visual Studio Code tal y como te lo encontraste. ¡Mejora su funcionamiento cambiando estas configuraciones! Mucha ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uyEUVgNMvGI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uyEUVgNMvGI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uyEUVgNMvGI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-17T19:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "NxJG8uc7cDPvG0N2IYUyM2EiYfM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-UsvMBE9afY"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-31T17:00:00Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Cómo usar ChatGPT para no ir a trabajar: Tutorial paso a paso",
+        "description": "ChatGPT te puede ayudar a muchas cosas... ¿Sabías que también puede ayudarte a montar una excusa para no ir a trabajar?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-UsvMBE9afY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-UsvMBE9afY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-UsvMBE9afY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-31T17:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "mT4s58lFgxMejXBjr3JU7w0sbQM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "15VKbky2gB4"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-11T15:30:00Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "⚛️ REACT + TYPESCRIPT: Creando un proyecto desde cero y paso a paso (Tutorial en español)",
+        "description": "Aprende a crear una API REST con Node.js, Express y tipos, gracias a TypeScript. Clase basada en el original FullStack Open ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/15VKbky2gB4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/15VKbky2gB4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/15VKbky2gB4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-11T15:30:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zx1DzJ19youhjiXfwISWtLY__y0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ILQ04sqmdBM"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-28T17:00:18Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "🤬 Mi REACCIÓN a que me digan que mis CURSOS de PROGRAMACIÓN GRATIS NO sirve para NADA",
+        "description": "\"Das cursos gratis pero no hay títulos ni certificados en eso. Todo lo gratis también tiene un precio y TÚ lo que haces NO AYUDA\" ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ILQ04sqmdBM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ILQ04sqmdBM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ILQ04sqmdBM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-28T17:00:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "k2l6DmaOMomy9jPGcXBfv2_QRVE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fVokwm0UALM"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-19T16:00:32Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¿Cuándo soy senior? ¿Qué significa serlo en programación?",
+        "description": "Mucha gente nos pregunta cuándo se llega al nivel senior. Hablamos de ello, por qué se pregunta tanto y realmente cómo ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fVokwm0UALM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fVokwm0UALM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fVokwm0UALM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-19T16:00:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9X3fmYoqQttWidcfcU71FoYZavY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xkXtqa8kjFY"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-19T15:30:11Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "SIMULACRO de PRUEBA TÉCNICA de PROGRAMADOR para TRABAJO en REMOTO en EEUU",
+        "description": "En este vídeo hacemos superamos un proceso técnico para conseguir un trabajo en remoto en Arc! La prueba es en inglés y ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xkXtqa8kjFY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xkXtqa8kjFY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xkXtqa8kjFY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-19T15:30:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4hdnwxOCnHqo9wQbP4yJP-f6Oag",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fQSPqfKRotg"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-09T21:25:11Z",
+        "channelId": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+        "title": "El AdventJS de @midudev me venció? Resolvemos del ejercicio 1 al 6",
+        "description": "Resolvemos los primeros ejercicios del AdventJS con @midudev, se nos complicó el 5 . No te pierdas de hacer un ejercicio por ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fQSPqfKRotg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fQSPqfKRotg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fQSPqfKRotg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Gonzalo Pozzo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-09T21:25:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aoihv90kk15_v_OETYzr4Jc0r9w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "lKgwWRsubcg"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-02T16:30:11Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Dejo mi trabajo como programador...",
+        "description": "Por qué me voy? ¿Cuál es mi próximo destino? Te cuento qué ha pasado y por qué he tomado este paso en mi carrera.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lKgwWRsubcg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lKgwWRsubcg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lKgwWRsubcg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-02T16:30:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "7Kf-VSTS1pEs5CHlVW7uKYlZH8A",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "3FssKkNqUHE"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-23T15:55:00Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "La mejor estrategia de Git para trabajar con ramas y en equipo",
+        "description": "Ni Git Flow, ni GitHub Flow... si quieres una estrategia que aumente la productividad y autonomía de los equipos tienes que darle ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3FssKkNqUHE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3FssKkNqUHE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3FssKkNqUHE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-23T15:55:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "X4zKJ9Ky63vRZwgfsbQnrYNNlZY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xtp_DuPxo9Q"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-25T16:45:01Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "TypeScript - Tutorial desde CERO en Español 🏆",
+        "description": "Guía desde cero para aprender y entender qué es TypeScript y cómo utilizarlo. ¿Por qué es importante? ¿Qué tiene que ver con ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xtp_DuPxo9Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xtp_DuPxo9Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xtp_DuPxo9Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-25T16:45:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "YQFA8hlhptLggXv5nWH7SISgOpk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8nm9WPptL0c"
+      },
+      "snippet": {
+        "publishedAt": "2020-12-28T20:30:42Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "CREA un SPINNER Loader 🌀 en CSS #shorts",
+        "description": "Aprende a crear un donut spinner sólo usando CSS y en menos de un minuto. Perfecto para frontenders impacientes ⏲️.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8nm9WPptL0c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8nm9WPptL0c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8nm9WPptL0c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-12-28T20:30:42Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "MacOIHJ8tBnXHn6ES-R3GgbiIHs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "UYjZ0MDUkn0"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-04T16:00:21Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Nullish Coalescing Operator (??) 🆕 ¡NUEVO operador lógico de JavaScript!",
+        "description": "Te enseño el nuevo operador nullish coalescing. Un operador lógico que devuelve el operando de la derecha cuando el ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UYjZ0MDUkn0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UYjZ0MDUkn0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UYjZ0MDUkn0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-04T16:00:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "12h3sqNa1XFw1BkwKolW3XoyQmU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "E9AKgDdZKnE"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-29T17:00:07Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¿Sabías que JavaScript tiene un error histórico en un tipo de dato?",
+        "description": "Existen los datos primitivos y los objetos en JavaScript. Pues hay un tipo primitivo un poco polémico y es que por un error ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/E9AKgDdZKnE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/E9AKgDdZKnE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/E9AKgDdZKnE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-29T17:00:07Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xR93OjuL4kAWHeBzE90P3bF1ZZM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xYi8qzLsS24"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-12T19:00:19Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Buenas prácticas, consejos y plantilla para mejorar tu Currículum",
+        "description": "Un currículum es una herramienta esencial para cualquier persona que busca un trabajo en el mundo de la programación.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xYi8qzLsS24/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xYi8qzLsS24/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xYi8qzLsS24/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-12T19:00:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "5zjHQmXvhQWR7IBouxsvlC-6d6w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xc-nQqiD0uc"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-22T17:00:43Z",
+        "channelId": "UCvW0h23iDEv6W0d2FSI_CFg",
+        "title": "Las sombras con @midudev #shorts",
+        "description": "Pagina con todos los codigos https://juliox.dev/ ▻ Patreon: https://www.patreon.com/devjulio ▻Twitter: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xc-nQqiD0uc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xc-nQqiD0uc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xc-nQqiD0uc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Dev Julio",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-22T17:00:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "k5UQZDKedzwh6Bk-VT513Ywlh8o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8-sn405JX1Q"
+      },
+      "snippet": {
+        "publishedAt": "2021-08-23T16:30:00Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "🤩 Usa Material UI en tu aplicación de React ⚛️ - FullStack Bootcamp JavaScript",
+        "description": "Material UI es el design system de Google. Es muy identificable y bonito, aunque demasiado reconocible. Igualmente, para estilar ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8-sn405JX1Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8-sn405JX1Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8-sn405JX1Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-08-23T16:30:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gwUQB8eI8yteGI9eX8b65HCZZus",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "o85OkeVtm7k"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-26T15:45:01Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "💯 Aprendiendo Node.JS y Express para crear una API 📶 - Bootcamp FullStack Gratuito",
+        "description": "Node.js te permite ejecutar JavaScript en el lado del servidor. En este vídeo vas a aprender a crear tu primera API y además ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o85OkeVtm7k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o85OkeVtm7k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o85OkeVtm7k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-26T15:45:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3PpIcOKsCMi9ZKYw_Rh9CzqLljs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "cf4UnP7B-vo"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-07T17:00:34Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "🔥PROGRAMO desde CERO un CLON funcional de TIKTOK con React, Backend y JavaScript para PRINCIPIANTES",
+        "description": "En este vídeo te enseño a crear un clon de TIKTOK en menos de 8 horas con JavaScript y React. Lo hacemos desde cero y ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cf4UnP7B-vo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cf4UnP7B-vo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cf4UnP7B-vo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-07T17:00:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sD8XyE3iBH1HmqaedVhdO5xsyJg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ZsGUkdFJRxA"
+      },
+      "snippet": {
+        "publishedAt": "2022-10-09T17:15:57Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "DESARROLLA un botón de MENÚ con animación con sólo HTML y CSS. ¡Sin imágenes!",
+        "description": "Es super fácil de hacer. Sólo tienes que crear un botón y dentro 3 divs vacíos. Cada div es uno de los palitos del menú. Luego al ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZsGUkdFJRxA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZsGUkdFJRxA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZsGUkdFJRxA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-10-09T17:15:57Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "voAG4T0rliEqwFJndI2nfB_IT4c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "VUsdD_Clmyw"
+      },
+      "snippet": {
+        "publishedAt": "2022-08-12T15:24:05Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "¡Te regalo mi CONFIGURACIÓN de VSCODE! Programación 10x",
+        "description": "Shorts Las configuraciones son muy personales... pero yo me he pasado años intentando mejorar la mía al detalle.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/VUsdD_Clmyw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/VUsdD_Clmyw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/VUsdD_Clmyw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-08-12T15:24:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "c0dZpd5kvsgz5HOxAMV6slctEOg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "YFES8Nm6uF4"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-25T17:30:04Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¡Deja de usar ternarias para hacer esto en JavaScript! ❌",
+        "description": "TEN CUIDADO! Es muy común usar operadores ternarios para darle un valor por defecto a una variable. Existen otras formas ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YFES8Nm6uF4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YFES8Nm6uF4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YFES8Nm6uF4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-25T17:30:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SCr-80_N-h_IrOwPRGgwwou9lyo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "tA-_vAz9y78"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-04T16:15:03Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "📚 Curso de Next.js 13 desde cero",
+        "description": "Curso desde cero para aprender todo lo que necesitas sobre Next.js 13: 00:00 - Introducción al curso y resumen de las ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tA-_vAz9y78/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tA-_vAz9y78/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tA-_vAz9y78/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-04T16:15:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "peB-NbRu7I69UFzFyv5L_zJ7tC4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "yKDVMquVIMI"
+      },
+      "snippet": {
+        "publishedAt": "2022-02-04T15:17:23Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "⭐ ¡Tu código ESPECTACULAR en Visual Studio Code! Cómo activar las LIGADURAS",
+        "description": "MEJORA tu VISUAL STUDIO CODE activando las ligaduras. ¡Te enseño cómo! ✍️ Las ligaduras son una característica de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yKDVMquVIMI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yKDVMquVIMI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yKDVMquVIMI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-02-04T15:17:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sGP49VTrsd5J5VjrP715F24V5lA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QR8CVkmJhLU"
+      },
+      "snippet": {
+        "publishedAt": "2022-11-21T15:33:10Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "ESPECTACULAR efecto para tu BOTÓN con sólo CSS",
+        "description": "Usando una animación, un poco de blur y el pseudo elemento before, tienes un botón super llamativo para tu web. ¿Qué te ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QR8CVkmJhLU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QR8CVkmJhLU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QR8CVkmJhLU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-11-21T15:33:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "CoT20aZp9KrnqY2ckkoF_6FTqPo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "p0OH206z9Wg"
+      },
+      "snippet": {
+        "publishedAt": "2020-05-21T18:15:10Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "música para programar, trabajar y estudiar - {code-fi} 👨‍💻",
+        "description": "Música para programar y concentrarse. Beats relajantes, chill con hip hop alternativo y lofi . Music for Coding, programming, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/p0OH206z9Wg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/p0OH206z9Wg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/p0OH206z9Wg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-05-21T18:15:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "cMPZ3ilL9JI2EUnRwxNHtfQJBUE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WtECsrdP3fU"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-19T15:49:05Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Aprende a centrar elementos en CSS",
+        "description": "Centrar un div, durante mucho tiempo, ha sido un trabajo muy complicado en CSS. ¡Pero estamos en 2022! Y existen diferentes ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WtECsrdP3fU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WtECsrdP3fU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WtECsrdP3fU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-19T15:49:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Xq4BNAMBCpK2LQS0oHxeX3wdcZY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "JSRbvtQppMg"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-25T15:30:08Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "👾 DETECTA los archivos más COMPLEJOS de un proyecto fácilmente",
+        "description": "Usando code-complexity puedes averiguar qué archivos son los más complejos en tu proyecto. Esto te puede servir para ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/JSRbvtQppMg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/JSRbvtQppMg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/JSRbvtQppMg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-25T15:30:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BNo90FxN6J9ySOTuySjfmLWk7l8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "frm0CHyeSbE"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-25T16:30:09Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Callbacks 🆚 Promises en JavaScript. ¡Entiende las diferencias y la importancia de cada una!",
+        "description": "Qué son los callbacks? ¿Para qué sirven? ¿Se siguen usando? En 10 minutos te explico qué son los callbacks y cómo ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/frm0CHyeSbE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/frm0CHyeSbE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/frm0CHyeSbE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-25T16:30:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "QU8L6lPoxYTiJBMplNGXIomGvO4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "AAyFWtYEo3Y"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-02T15:03:19Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Cómo APRENDER desde CERO PROGRAMACIÓN WEB #shorts",
+        "description": "Recomendaciones para aprender programación desde cero para que cualquiera pueda empezar. ▷ No te pierdas más directos ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/AAyFWtYEo3Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/AAyFWtYEo3Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/AAyFWtYEo3Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-02T15:03:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "_52l28-ZXTGk_G4aLdQRWt1UKCQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "RxxyJk4h9pU"
+      },
+      "snippet": {
+        "publishedAt": "2022-10-04T15:00:30Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "⛔️ MALAS PRÁCTICAS de JavaScript. ¡Evítalas!",
+        "description": "No las hagas si quieres hacer un código más sostenible. Guarda el reel para no cometerlas!!! Y es que hablamos mucho de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RxxyJk4h9pU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RxxyJk4h9pU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RxxyJk4h9pU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-10-04T15:00:30Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Lp8JcWLKf1PkGc2S7UPvOeI8INo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_ej3jv8sZTU"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-09T15:30:05Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "✅ Resuelvo el ejercicio de Fibonacci en JavaScript sin recursividad",
+        "description": "La sucesión o serie de Fibonacci es, seguramente, uno de los ejercicios más típicos en entrevistas de trabajo o de universidad.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_ej3jv8sZTU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_ej3jv8sZTU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_ej3jv8sZTU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-09T15:30:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aQx8CG1geWIjtMpfL-clpb_80Eo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "h5HQVHTpeHs"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-06T15:00:31Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "Aprendiendo Tailwind CSS desde Cero. ¡Estila más rápido! ⚡",
+        "description": "Tailwind CSS es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad que se pueden aplicar con ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/h5HQVHTpeHs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/h5HQVHTpeHs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/h5HQVHTpeHs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-06T15:00:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "V6ClNFXqHJennyObp1iZZNm_lg0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_2hp91tJGpg"
+      },
+      "snippet": {
+        "publishedAt": "2021-08-04T16:45:01Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¿Cómo puedo usar async/await dentro de un useEffect en React? ⚛️ #shorts",
+        "description": "SÍ SE PUEDE! Aunque no lo parezca. Aunque te salga un error. ¡Hay una forma! ¡Apréndela en menos de un minuto! ✓ ▷ No te ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_2hp91tJGpg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_2hp91tJGpg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_2hp91tJGpg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-08-04T16:45:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BG96FY6SEsd0bbFRKQrqDcHXNVM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WD-z4g8lejI"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-18T16:42:05Z",
+        "channelId": "UCpsBIC82s8NhGjvp_c0Al_w",
+        "title": "STATE of JS 2023 (Twitch de Midudev)",
+        "description": "En este video @midudev habla sobre las tendencias que se encontraron en STATE of JS. Midu habla de muchas cosas ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WD-z4g8lejI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WD-z4g8lejI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WD-z4g8lejI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Rodrigo Goitia",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-18T16:42:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "yDNCVb-PeW1t7FDsYgfTR6tgF5s",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "em_Vh7ZGrnw"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-08T17:00:20Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "💥 Array.flat y Array.flatMap ¡Domina estos nuevos métodos de JavaScript!",
+        "description": "Hoy vas a aprender dos métodos nuevos de Array que seguramente no conocías! ‍   El método flat() crea una nueva matriz ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/em_Vh7ZGrnw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/em_Vh7ZGrnw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/em_Vh7ZGrnw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-08T17:00:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "wQPsN8-u7I8YTkYuP1luZfQMcXM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ZpY5KdGQvwI"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-06T17:00:14Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "📘 Tutorial TypeScript con Node.js y Express. ¡Crea tu API REST con tipos estáticos DESDE CERO!",
+        "description": "Aprende a crear una API REST con Node.js, Express y tipos, gracias a TypeScript. Clase basada en el original FullStack Open ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZpY5KdGQvwI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZpY5KdGQvwI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZpY5KdGQvwI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-06T17:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "WkOx8R7_e18DeJ0s25vxa1CH2G8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pFT8wD2uRSE"
+      },
+      "snippet": {
+        "publishedAt": "2022-08-15T15:00:29Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "CURSO de NEXT.JS 12 desde CERO y con dos proyectos prácticos",
+        "description": "Creamos un proyecto desde cero con Next.js 00:00 - Introducción 03:40 - Iniciando el proyecto desde cero 06:00 - Estructura de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pFT8wD2uRSE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pFT8wD2uRSE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pFT8wD2uRSE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-08-15T15:00:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8th4UdqYXsK6MCIxYlAJpTGNCgQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "iPNt12IdbCU"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-25T16:00:19Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "📚 Tutorial de React Router 6 desde cero",
+        "description": "React Router es la biblioteca más famosa de enrutado en React. Con la versión 6 hay muchas cosas que han cambiado.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iPNt12IdbCU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iPNt12IdbCU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iPNt12IdbCU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-25T16:00:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aU1u7TLRSkIX6ogZgudODDR4qqM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "75iw5K8xRH8"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-14T12:15:54Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¿Por qué hago el contenido de Desarrollo Web y Full Stack con Javascript GRATIS? 💸 (midudev)",
+        "description": "Te cuento las razones por las que comparto todo mi contenido de forma gratuita. ¿Por qué he hecho un curso de React gratis en ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/75iw5K8xRH8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/75iw5K8xRH8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/75iw5K8xRH8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-14T12:15:54Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "byB-Ijcmkgfr6fATbgM-_39KObY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Cu8heUuEYdQ"
+      },
+      "snippet": {
+        "publishedAt": "2021-03-10T17:38:08Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "🚫 EXPRESIONES REGULARES en JAVASCRIPT ¡NO hagas esto! 🙅‍♂️ (Reto Javascript) #shorts",
+        "description": "Reto de JavaScript al usar expresiones regulares y el método test para comprobar si un string tiene ocurrencias de un patrón.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Cu8heUuEYdQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Cu8heUuEYdQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Cu8heUuEYdQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-03-10T17:38:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xTCb5ilDsk0ypTa5jdRAAgX9Wv0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sIhm4YOMK6Q"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-25T15:30:23Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "📚 GitHub Actions TUTORIAL Desde Cero - Integración continua (CI/CD) gratis y fácil 🚀",
+        "description": "Aprende desde cero a automatizar de forma gratuita y fácil tus despliegues. Domina la integración continua con GitHub Actions ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sIhm4YOMK6Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sIhm4YOMK6Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sIhm4YOMK6Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-25T15:30:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qpUW82TZ6IRllfOQKURHcsResA0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "97ZuQdLauNU"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-09T15:06:59Z",
+        "channelId": "UC3aj05GEEyzdOqYM5FLSFeg",
+        "title": "¡Ojo con esta extensión! Deja de escribir tus console.log de forma manual",
+        "description": "Cansado de escribir console.log manualmente? ¿Te falta información una vez que lo has hecho? Esta extensión automatiza esto ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/97ZuQdLauNU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/97ZuQdLauNU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/97ZuQdLauNU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "midulive",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-09T15:06:59Z"
+      }
+    }
+  ]
+}
