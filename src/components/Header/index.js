@@ -28,7 +28,7 @@ function SearchForm() {
   const handleChange = (event) => setText(event.target.value)
   const handleSubmit = (event) => {
     event.preventDefault()
-    text.length > 0 && router.push(text)
+    text.length > 0 && router.push(`/search/${text}`)
   }
   return (
     <form onSubmit={handleSubmit} className='flex w-full'>

@@ -1,10 +1,11 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
+import NextNProgress from 'nextjs-progressbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, router }) {
   const getLayout = Component.getLayout || ((page) => page)
   return (
     <>
@@ -20,6 +21,11 @@ export default function App({ Component, pageProps }) {
         }
       `}
       </style>
+      <NextNProgress
+        height={2.5}
+        color='rgb(251 113 133)'
+        options={{ minimum: 0.8 }}
+      />
       {getLayout(<Component {...pageProps} />)}
     </>
   )

@@ -1,7 +1,7 @@
 export default function Alert({ variant = 'info', children, className = '', ...props }) {
   const variantColor = VariantColors[variant] || VariantColors.info
   return (
-    <div class={`p-2 text-sm rounded-lg ${variantColor} ${className}`} role='alert' {...props}>
+    <div className={`p-2 text-sm rounded-lg ${variantColor} ${className}`} role='alert' {...props}>
       {children}
     </div>
   )
