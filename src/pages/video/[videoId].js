@@ -67,7 +67,7 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
               <Alert variant='info'>
                 El análisis se ha limitado a un máximo de <strong>95 comentarios</strong> para evitar exceder el consumo gratuito de la cuota de la API de YouTube.
               </Alert>
-              <StatisticsAI comments={comments} />
+              <StatisticsAI comments={comments} videoId={videoId} />
               <span className='font-medium'>
                 Comentarios - {commentsInfo.pageInfo.totalResults}
               </span>

@@ -14,19 +14,25 @@ import { useCommentsContext } from '@/context/CommentsContext'
 
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend)
 
-export default function StatisticsAI({ comments }) {
+export default function StatisticsAI({ comments, videoId }) {
   const {
     classifiedComments,
     setClassifiedComments
   } = useCommentsContext()
 
   useEffect(() => {
-    const parseComments = comments.map(comment => comment.snippet.topLevelComment.snippet.textOriginal)
-    CohereAPI.clasiffyComments({ comments: parseComments })
-      .then(res => {
-        setClassifiedComments(res.body.classifications)
-      })
-  }, [comments, setClassifiedComments])
+    const savedClassifications = JSON.parse(sessionStorage.getItem(`${videoId}-classifications`))
+    if (savedClassifications) {
+      setClassifiedComments(savedClassifications)
+    } else {
+      const parseComments = comments.map(comment => comment.snippet.topLevelComment.snippet.textOriginal)
+      CohereAPI.clasiffyComments({ comments: parseComments })
+        .then(res => {
+          sessionStorage.setItem(`${videoId}-classifications`, JSON.stringify(res.body.classifications))
+          setClassifiedComments(res.body.classifications)
+        })
+    }
+  }, [comments, setClassifiedComments, videoId])
 
   if (!classifiedComments || classifiedComments?.length === 0) {
     return (
