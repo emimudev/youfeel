@@ -9,7 +9,6 @@ export default function SearchPage({ searchResult, isOverloaded }) {
   // const { items: videos, nextPageToken, pageInfo } = searchResult
   const { items: videos } = searchResult
   // const { totalResults, resultsPerPage } = pageInfo
-  console.log(searchResult)
   return (
     <>
       {isOverloaded && (

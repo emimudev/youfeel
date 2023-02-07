@@ -1,22 +1,30 @@
+import { useCommentsContext } from '@/context/CommentsContext'
+import { PredictionMaps } from '@/utils/predictionsMap'
 import { HandThumbUpIcon } from '@heroicons/react/24/outline'
 import { formatDistanceToNowStrict, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
 import Image from 'next/image'
 import { useState } from 'react'
+import Tag from '../Tag'
 
-export default function Comment({ snippet }) {
+export default function Comment({ snippet, index }) {
   const [isCollapse, setIsCollapse] = useState(true)
   const { topLevelComment, totalReplyCount } = snippet
   const { authorDisplayName, likeCount, publishedAt, textDisplay, authorProfileImageUrl } = topLevelComment.snippet
+  const { getCommentByIndex } = useCommentsContext()
+  const comment = getCommentByIndex({ index })
+  const { prediction, confidence } = comment
+  console.log({ [index]: prediction })
   const toggleCollapse = () => setIsCollapse(prev => !prev)
   return (
-    <div className='flex gap-4'>
-      <div className='h-10 flex-[0_0_auto] w-10 overflow-hidden relative rounded-full'>
+    <div className='group flex gap-4 px-2'>
+      <div className={`h-10 flex-[0_0_auto] w-10 overflow-hidden relative rounded-full ring-[3px] shadow-lg ${PredictionRingColors[prediction]}`}>
         <Image
           src={authorProfileImageUrl}
-          fill
+          width={48}
+          height={48}
           alt={`Profile photo of ${authorDisplayName} YoutubeChannel`}
-          className='absolute top-0 left-0 bottom-0 right-0'
+          className='absolute top-0 left-0 bottom-0 right-0 rounded-full border-white border-2 '
           draggable='false'
         />
       </div>
@@ -32,6 +40,11 @@ export default function Comment({ snippet }) {
           <span className='text-sm'>
             - hace {formatDistanceToNowStrict(parseISO(publishedAt), { locale: es, includeSeconds: true })}
           </span>
+          {prediction && (
+            <Tag className={`absolute bottom-1 right-2 ${PredictionBgTag[prediction]}`}>
+              {prediction && PredictionMaps[prediction]}
+            </Tag>
+          )}
         </div>
         <div
           className={`video-comment-text text-sm ${isCollapse ? 'line-clamp-4' : 'line-clamp-none'}`}
@@ -50,6 +63,20 @@ export default function Comment({ snippet }) {
       </div>
     </div>
   )
+}
+
+const PredictionRingColors = {
+  positive: 'ring-emerald-500 group-hover:shadow-emerald-300',
+  toxic: 'ring-rose-500 group-hover:shadow-rose-300',
+  racist: 'ring-pink-500 group-hover:shadow-pink-300',
+  neutral: 'ring-blue-500 group-hover:shadow-blue-300'
+}
+
+const PredictionBgTag = {
+  positive: '!bg-emerald-300 !text-white',
+  toxic: '!bg-rose-300 !text-white',
+  racist: '!bg-pink-300 !text-white',
+  neutral: '!bg-blue-300 !text-white'
 }
 
 const highlightMentions = text => {

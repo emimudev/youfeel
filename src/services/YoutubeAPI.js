@@ -10,7 +10,7 @@ function search({ type = 'video', maxResults = MAX_RESULTS, query }) {
 }
 
 function video({ videoId }) {
-  const url = `${YT_BASE_URL}/videos?part=snippet&part=contentDetails&part=player&part=statistics&id=${videoId}&key=${YT_API_KEY}`
+  const url = `${YT_BASE_URL}/videos?part=snippet&part=statistics&id=${videoId}&key=${YT_API_KEY}`
   return axios.get(url)
     .then(res => res.data)
 }

@@ -5,12 +5,12 @@ import Link from 'next/link'
 
 export default function RelatedVideos({ videos = [] }) {
   return (
-    <div className='flex-auto flex flex-col gap-4 md:w-[420px] overflow-hidden'>
+    <div className='flex-auto flex flex-col md:w-[420px] overflow-hidden'>
       {videos.map((video) => {
         const { videoId } = video.id
         const { thumbnails, title, channelTitle, publishedAt } = video.snippet
         return (
-          <Link className='group' href={`/video/${videoId}`} key={videoId}>
+          <Link className='group active:bg-slate-100 p-2 rounded-lg' href={`/video/${videoId}`} key={videoId}>
             <div className='flex gap-3'>
               <div className='h-[94px] w-[168px] bg-slate-800 transition-opacity rounded-md overflow-hidden flex-[0_0_auto] relative'>
                 <Image

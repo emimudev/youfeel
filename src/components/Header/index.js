@@ -1,3 +1,4 @@
+import getYoutubeVideoId from '@/utils/getYoutubeVideoId'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
@@ -24,11 +25,23 @@ export default function Header() {
 function SearchForm() {
   const router = useRouter()
   const { querySearch } = router.query
-  const [text, setText] = useState(querySearch)
-  const handleChange = (event) => setText(event.target.value)
+  const [text, setText] = useState(querySearch ?? '')
+  const handleChange = (event) => {
+    event.preventDefault()
+    setText(event.target.value)
+  }
   const handleSubmit = (event) => {
     event.preventDefault()
-    text.length > 0 && router.push(`/search/${text}`)
+    const videoId = getYoutubeVideoId(text)
+    if (videoId) {
+      router.push(`/video/${videoId}`)
+    } else {
+      text.length > 0 && router.push(`/search/${text}`)
+    }
+  }
+  const handlePaste = event => {
+    setText(text + event.clipboardData.getData('text'))
+    event.preventDefault()
   }
   return (
     <form onSubmit={handleSubmit} className='flex w-full'>
@@ -36,10 +49,10 @@ function SearchForm() {
         <svg aria-hidden='true' className='w-5 h-5 text-gray-500 dark:text-gray-400' fill='currentColor' viewBox='0 0 20 20'><path fillRule='evenodd' d='M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z' clipRule='evenodd' /></svg>
       </div>
       <input
-        type='search'
         value={text}
         onChange={handleChange}
-        placeholder='Search videos or channels...'
+        onPaste={handlePaste}
+        placeholder='Buscar videos, canales, URL...'
         className='pl-10 outline-none block rounded-tr-none rounded-br-none p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-gray-300 border-2 focus:ring-rose-400 focus:border-rose-400 border-r-0'
       />
       <Button

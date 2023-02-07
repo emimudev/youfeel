@@ -6,7 +6,10 @@ import RelatedVideos from '@/components/RelatedVideos'
 import VideoStatistic from '@/components/VideoStatistic'
 import LikesComparisonBar from '@/components/LikesComparisonBar'
 import TagsCollapse from '@/components/TagsCollapse'
-import Comment from '@/components/Comment'
+import CommentList from '@/components/CommentList'
+import StatisticsAI from '@/components/StatisticsAI'
+import CommentsContextProvider from '@/context/CommentsContext'
+import Alert from '@/components/Alert'
 
 export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commentsInfo }) {
   const videoInfo = pageInfo.items[0]
@@ -16,8 +19,8 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
   const { items: relatedVideos } = relatedVideosInfo
   const { likeCount, dislikes, viewCount } = statistics
   const totalVotes = +likeCount + dislikes
-  console.log({ commentsInfo })
   const { items: comments } = commentsInfo
+
   return (
     <div className='flex p-3 flex-col md:p-6 lg:px-16 '>
       <div className='flex flex-wrap md:flex-nowrap gap-6'>
@@ -46,8 +49,8 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
               </div>
               <div className='flex flex-wrap gap-1 items-center'>
                 <VideoStatistic views label='Vistas' count={viewCount} />
-                <VideoStatistic likes label='Likes' count={likeCount} />
-                <VideoStatistic dislikes label='Dislikes' count={dislikes} />
+                <VideoStatistic className='text-blue-700' likes label='Likes' count={likeCount} />
+                <VideoStatistic className='text-red-700' dislikes label='Dislikes' count={dislikes} />
               </div>
             </div>
             <div className='flex flex-col gap-3'>
@@ -56,14 +59,21 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
               <VideoDescription description={description} />
             </div>
           </div>
-          <div className='flex flex-col gap-3'>
-            <span className='font-medium'>
-              {commentsInfo.pageInfo.totalResults} Comentarios
-            </span>
-            <div className='flex flex-col gap-4'>
-              {comments.map((comment) => <Comment key={comment.id} replies={comment.replies} snippet={comment.snippet} />)}
+          <CommentsContextProvider>
+            <div className='flex flex-col gap-3'>
+              <span className='font-medium'>
+                Análisis de sentimientos
+              </span>
+              <Alert variant='info'>
+                El análisis se ha limitado a un máximo de <strong>95 comentarios</strong> para evitar exceder el consumo gratuito de la cuota de la API de YouTube.
+              </Alert>
+              <StatisticsAI comments={comments} />
+              <span className='font-medium'>
+                Comentarios - {commentsInfo.pageInfo.totalResults}
+              </span>
+              <CommentList comments={comments} />
             </div>
-          </div>
+          </CommentsContextProvider>
         </div>
         <RelatedVideos videos={relatedVideos} />
       </div>
@@ -90,7 +100,7 @@ export async function getServerSideProps(context) {
     YoutubeAPI.video({ videoId }),
     YoutubeAPI.relatedVideos({ videoId }),
     YoutubeAPI.dislikes({ videoId }),
-    YoutubeAPI.comments({ videoId, maxResults: 20 })
+    YoutubeAPI.comments({ videoId, maxResults: 95 })
   ])
   if (pageInfo.status === 'fulfilled') {
     pageInfo.value.items[0].statistics.dislikes = dislikesInfo.value?.dislikes
