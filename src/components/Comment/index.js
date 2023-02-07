@@ -13,7 +13,8 @@ export default function Comment({ snippet, index }) {
   const { authorDisplayName, likeCount, publishedAt, textDisplay, authorProfileImageUrl } = topLevelComment.snippet
   const { getCommentByIndex } = useCommentsContext()
   const comment = getCommentByIndex({ index })
-  const { prediction, confidence } = comment
+  // const { prediction, confidence } = comment
+  const { prediction } = comment
 
   const toggleCollapse = () => setIsCollapse(prev => !prev)
   return (
