@@ -1,8 +1,8 @@
 import cohere from 'cohere-ai' // This is your trial API key
-import { COHERE_API_KEY } from './api.config'
+import { COHERE_KEY } from './api.config'
 
 async function clasiffyComments({ comments }) {
-  cohere.init(COHERE_API_KEY)
+  cohere.init(COHERE_KEY)
   const response = await cohere.classify({
     model: 'large',
     inputs: comments,

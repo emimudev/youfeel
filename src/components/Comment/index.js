@@ -14,7 +14,7 @@ export default function Comment({ snippet, index }) {
   const { getCommentByIndex } = useCommentsContext()
   const comment = getCommentByIndex({ index })
   const { prediction, confidence } = comment
-  console.log({ [index]: prediction })
+
   const toggleCollapse = () => setIsCollapse(prev => !prev)
   return (
     <div className='group flex gap-4 px-2'>

@@ -45,6 +45,10 @@ export async function getServerSideProps(context) {
   let searchResult = null
   let isOverloaded = false
   try {
+    // Comentar este if si se quieren realizar búsquedas
+    if (process.env.NODE_ENV !== 'production') {
+      throw new Error()
+    }
     searchResult = await YoutubeAPI.search({ type: 'video', maxResults: 50, query: querySearch })
   } catch (error) {
     searchResult = json

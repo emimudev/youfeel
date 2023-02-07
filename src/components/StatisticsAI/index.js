@@ -44,7 +44,7 @@ export default function StatisticsAI({ comments, videoId }) {
   }
 
   const group = groupArray(classifiedComments, 'prediction')
-  console.log({ classifiedComments, group })
+  // console.log({ classifiedComments, group })
 
   const data = {
     labels: ['Positivo', 'Tóxico', 'Racista', 'Neutral'],
