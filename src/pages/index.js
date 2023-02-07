@@ -1,6 +1,7 @@
 import Button from '@/components/Button'
 import HomeSearch from '@/components/HomeSearch'
 import { BrandHorizontal, Github } from '@/components/Icons'
+import Tag from '@/components/Tag'
 import Head from 'next/head'
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
         <div className='home-bg-radial-gradient' />
         <div className='flex flex-col min-h-[calc(100vh-60px)]'>
           <header className='h-[80px] p-3 md:px-12 flex justify-end items-center'>
-            <a href='https://github.com/emimudev/' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/emimudev/youfeel' target='_blank' rel='noreferrer'>
               <Button color='opaque' light rounded icon={<Github className='w-8 h-8' />} />
             </a>
           </header>
@@ -22,22 +23,44 @@ export default function Home() {
               <BrandHorizontal />
             </div>
             <div className='text-lg font-semibold mb-2 text-center'>
-              YouTube sentiment analyzer
+              YouTube Sentiment Analyzer
             </div>
-            <div className='text-center'>
-              See what users think about any content published
+            <div className='text-center pb-4'>
+              Observa lo que los usuarios piensan sobre cualquier contenido publicado en YouTube
             </div>
-            <div className='max-w-2xl w-full mt-5 pb-10'>
+            <div className='max-w-2xl w-full mt-5 pb-6 flex flex-col'>
               <HomeSearch />
+              <span className='text-xs text-gray-400 mt-1'>
+                Es posible buscar un video en específico pegando la URL del video
+              </span>
+              <span className='font-semibold mt-5 text-center'>
+                Solo en youfeel
+              </span>
+            </div>
+            <div className='flex gap-3 flex-wrap'>
+              <div className='px-4 py-4  border-2 rounded-lg text-sm hover:shadow-lg flex-1 md:flex-auto'>
+                Visualización de dislikes
+              </div>
+              <div className='px-4 py-4  border-2 rounded-lg text-sm hover:shadow-lg flex-1 md:flex-auto'>
+                Clasificación de comentarios
+              </div>
+              <div className='px-4 py-4  border-2 rounded-lg text-sm hover:shadow-lg flex-1 md:flex-auto'>
+                Representaciones gráficas
+              </div>
             </div>
           </section>
-          {/* <div className='max-h-[250px] flex-initial overflow-hidden h-auto '>
-            <svg className='text-rose-400' viewBox='0 0 1440 320'><path fill='currentColor' fill-opacity='1' d='M0,64L120,85.3C240,107,480,149,720,144C960,139,1200,85,1320,58.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z' /></svg>
-          </div> */}
         </div>
-        <footer className='flex justify-center min-h-60px] '>
-          <span className='font-semibold hover:underline'>
-            <a href='https://github.com/emimudev/' target='_blank' rel='noreferrer'>Developed by emimudev</a>
+        <footer className='max-w-3xl px-3 w-full m-auto flex justify-between min-h-60px] flex-wrap gap-1'>
+          <Tag className='normal-case'>
+            <a href='https://github.com/topics/midudev-cohere-2023' target='_blank' rel='noreferrer'>
+              #midudev-cohere-2023
+            </a>
+          </Tag>
+          <Tag className='normal-case'>
+            <a href='https://github.com/emimudev/' target='_blank' rel='noreferrer'>developed by emimudev</a>
+          </Tag>
+          <span className='text-sm'>
+            Powered by <Tag className='normal-case'><a href='https://vercel.com/' target='_blank' rel='noreferrer'>Vercel</a></Tag> and <Tag className='normal-case'> <a href='https://cohere.ai/' target='_blank' rel='noreferrer'>co:here</a></Tag>
           </span>
         </footer>
         <style jsx>{`
