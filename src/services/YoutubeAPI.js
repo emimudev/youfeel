@@ -27,11 +27,19 @@ function relatedVideos({ videoId, maxResults = MAX_RESULTS }) {
     .then(res => res.data)
 }
 
+function comments({ videoId, maxResults = 100 }) {
+  // const url = `${YT_BASE_URL}/commentThreads?part=snippet&part=replies&videoId=${videoId}&maxResults=${maxResults}&key=${YT_API_KEY}`
+  const url = `${YT_BASE_URL}/commentThreads?part=snippet&videoId=${videoId}&maxResults=${maxResults}&key=${YT_API_KEY}`
+  return axios.get(url)
+    .then(res => res.data)
+}
+
 const YoutubeAPI = {
   search,
   video,
   dislikes,
-  relatedVideos
+  relatedVideos,
+  comments
 }
 
 export default YoutubeAPI

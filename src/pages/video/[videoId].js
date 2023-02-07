@@ -5,21 +5,21 @@ import VideoDescription from '@/components/VideoDescription'
 import RelatedVideos from '@/components/RelatedVideos'
 import VideoStatistic from '@/components/VideoStatistic'
 import LikesComparisonBar from '@/components/LikesComparisonBar'
-import Tag from '@/components/Tag'
 import TagsCollapse from '@/components/TagsCollapse'
+import Comment from '@/components/Comment'
 
-export default function VideoPage({ pageInfo, videoId, relatedVideosInfo }) {
+export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commentsInfo }) {
   const videoInfo = pageInfo.items[0]
-  console.log({ videoInfo })
   const { statistics, snippet } = videoInfo
   const { thumbnails, description, title, channelTitle, tags } = snippet
   const { default: defaultSize } = thumbnails
   const { items: relatedVideos } = relatedVideosInfo
-  console.log({ statistics })
   const { likeCount, dislikes, viewCount } = statistics
-  const totalVotes = +likeCount + +dislikes
+  const totalVotes = +likeCount + dislikes
+  console.log({ commentsInfo })
+  const { items: comments } = commentsInfo
   return (
-    <div className='flex p-3 flex-col md:p-6 '>
+    <div className='flex p-3 flex-col md:p-6 lg:px-16 '>
       <div className='flex flex-wrap md:flex-nowrap gap-6'>
         <div className='flex flex-col w-full max-w-full lg:max-w-[70vw] gap-3.5 overflow-hidden'>
           <iframe
@@ -50,17 +50,23 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo }) {
                 <VideoStatistic dislikes label='Dislikes' count={dislikes} />
               </div>
             </div>
-            <LikesComparisonBar dislikePercentaje={(dislikes / totalVotes) * 100} />
-            <TagsCollapse tags={tags} />
-            <VideoDescription description={description} />
+            <div className='flex flex-col gap-3'>
+              <LikesComparisonBar dislikePercentaje={(dislikes / totalVotes) * 100} />
+              <TagsCollapse tags={tags} />
+              <VideoDescription description={description} />
+            </div>
           </div>
-          <div>
-            comments
+          <div className='flex flex-col gap-3'>
+            <span className='font-medium'>
+              {commentsInfo.pageInfo.totalResults} Comentarios
+            </span>
+            <div className='flex flex-col gap-4'>
+              {comments.map((comment) => <Comment key={comment.id} replies={comment.replies} snippet={comment.snippet} />)}
+            </div>
           </div>
         </div>
         <RelatedVideos videos={relatedVideos} />
       </div>
-      {videoId}
     </div>
   )
 }
@@ -78,11 +84,13 @@ export async function getServerSideProps(context) {
   const [
     pageInfo,
     relatedVideos,
-    dislikesInfo
+    dislikesInfo,
+    commentsInfo
   ] = await Promise.allSettled([
     YoutubeAPI.video({ videoId }),
     YoutubeAPI.relatedVideos({ videoId }),
-    YoutubeAPI.dislikes({ videoId })
+    YoutubeAPI.dislikes({ videoId }),
+    YoutubeAPI.comments({ videoId, maxResults: 20 })
   ])
   if (pageInfo.status === 'fulfilled') {
     pageInfo.value.items[0].statistics.dislikes = dislikesInfo.value?.dislikes
@@ -92,7 +100,8 @@ export async function getServerSideProps(context) {
     props: {
       videoId,
       pageInfo: pageInfo.value,
-      relatedVideosInfo: relatedVideos.value
+      relatedVideosInfo: relatedVideos.value,
+      commentsInfo: commentsInfo.value
     }
   }
 }
