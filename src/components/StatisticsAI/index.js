@@ -21,17 +21,20 @@ export default function StatisticsAI({ comments, videoId }) {
   } = useCommentsContext()
 
   useEffect(() => {
-    const savedClassifications = JSON.parse(sessionStorage.getItem(`${videoId}-classifications`))
-    if (savedClassifications) {
-      setClassifiedComments(savedClassifications)
-    } else {
-      const parseComments = comments.map(comment => comment.snippet.topLevelComment.snippet.textOriginal)
-      CohereAPI.clasiffyComments({ comments: parseComments })
-        .then(res => {
-          sessionStorage.setItem(`${videoId}-classifications`, JSON.stringify(res.body.classifications))
-          setClassifiedComments(res.body.classifications)
-        })
-    }
+    let savedClassifications = null
+    try {
+      savedClassifications = JSON.parse(sessionStorage.getItem(`${videoId}-classifications`))
+      if (savedClassifications) {
+        setClassifiedComments(savedClassifications)
+      } else {
+        const parseComments = comments.map(comment => comment.snippet.topLevelComment.snippet.textOriginal)
+        CohereAPI.clasiffyComments({ comments: parseComments })
+          .then(res => {
+            sessionStorage.setItem(`${videoId}-classifications`, JSON.stringify(res.body.classifications))
+            setClassifiedComments(res.body.classifications)
+          })
+      }
+    } catch (err) { }
   }, [comments, setClassifiedComments, videoId])
 
   if (!classifiedComments || classifiedComments?.length === 0) {
@@ -44,7 +47,6 @@ export default function StatisticsAI({ comments, videoId }) {
   }
 
   const group = groupArray(classifiedComments, 'prediction')
-  // console.log({ classifiedComments, group })
 
   const data = {
     labels: ['Positivo', 'Tóxico', 'Racista', 'Neutral'],

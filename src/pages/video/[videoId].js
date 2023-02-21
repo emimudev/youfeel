@@ -106,7 +106,9 @@ export async function getServerSideProps(context) {
     pageInfo.value.items[0].statistics.dislikes = dislikesInfo.value?.dislikes
     pageInfo.value.items[0].statistics.rating = dislikesInfo.value?.rating
   }
-  console.log({ pageInfo, relatedVideos })
+
+  console.log([pageInfo, relatedVideos, dislikesInfo, commentsInfo])
+
   return {
     props: {
       videoId,
