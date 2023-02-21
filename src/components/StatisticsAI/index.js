@@ -23,7 +23,7 @@ export default function StatisticsAI({ comments, videoId }) {
   useEffect(() => {
     const parseComments = comments.map(
       comment => comment.snippet.topLevelComment.snippet.textOriginal
-    ).filter(c => c)
+    )
     CohereAPI.clasiffyComments({ comments: parseComments })
       .then(res => {
         if (res.statusCode === 200) {

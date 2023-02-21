@@ -10,6 +10,7 @@ import CommentList from '@/components/CommentList'
 import StatisticsAI from '@/components/StatisticsAI'
 import CommentsContextProvider from '@/context/CommentsContext'
 import Alert from '@/components/Alert'
+import { isEmptyComment } from '@/utils/isEmptyComment'
 
 export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commentsInfo }) {
   const videoInfo = pageInfo.items[0]
@@ -20,6 +21,7 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
   const { likeCount, dislikes, viewCount } = statistics
   const totalVotes = +likeCount + dislikes
   const { items: comments } = commentsInfo
+  const validComments = comments.filter(comment => !isEmptyComment(comment))
 
   return (
     <div className='flex p-3 flex-col md:p-6 lg:px-16 '>
@@ -67,11 +69,11 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
               <Alert variant='info'>
                 El análisis se ha limitado a un máximo de <strong>95 comentarios</strong> para evitar exceder el consumo gratuito de la cuota de la API de YouTube.
               </Alert>
-              <StatisticsAI comments={comments} videoId={videoId} />
+              <StatisticsAI comments={validComments} videoId={videoId} />
               <span className='font-medium'>
                 Comentarios - {commentsInfo.pageInfo.totalResults}
               </span>
-              <CommentList comments={comments} />
+              <CommentList comments={validComments} />
             </div>
           </CommentsContextProvider>
         </div>
