@@ -14,7 +14,7 @@ export default function Comment({ snippet, index }) {
   const { getCommentByIndex } = useCommentsContext()
   const comment = getCommentByIndex({ index })
   // const { prediction, confidence } = comment
-  const { prediction } = comment
+  const prediction = comment?.prediction
 
   const toggleCollapse = () => setIsCollapse(prev => !prev)
   return (

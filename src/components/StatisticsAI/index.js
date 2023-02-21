@@ -21,20 +21,18 @@ export default function StatisticsAI({ comments, videoId }) {
   } = useCommentsContext()
 
   useEffect(() => {
-    let savedClassifications = null
-    try {
-      savedClassifications = JSON.parse(sessionStorage.getItem(`${videoId}-classifications`))
-      if (savedClassifications) {
-        setClassifiedComments(savedClassifications)
-      } else {
-        const parseComments = comments.map(comment => comment.snippet.topLevelComment.snippet.textOriginal)
-        CohereAPI.clasiffyComments({ comments: parseComments })
-          .then(res => {
-            sessionStorage.setItem(`${videoId}-classifications`, JSON.stringify(res.body.classifications))
-            setClassifiedComments(res.body.classifications)
-          })
-      }
-    } catch (err) { }
+    const parseComments = comments.map(
+      comment => comment.snippet.topLevelComment.snippet.textOriginal
+    ).filter(c => c)
+    CohereAPI.clasiffyComments({ comments: parseComments })
+      .then(res => {
+        if (res.statusCode === 200) {
+          setClassifiedComments(res.body.classifications)
+        }
+      })
+      .catch(err => {
+        console.log({ err })
+      })
   }, [comments, setClassifiedComments, videoId])
 
   if (!classifiedComments || classifiedComments?.length === 0) {
