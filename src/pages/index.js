@@ -33,11 +33,8 @@ export default function Home() {
               <span className='text-xs text-gray-400 mt-1'>
                 Es posible buscar un video en específico pegando la URL del video
               </span>
-              <span className='font-semibold mt-5 text-center'>
-                Solo en youfeel
-              </span>
             </div>
-            <div className='flex gap-3 flex-wrap'>
+            <div className='flex gap-3 mt-6 flex-wrap'>
               <div className='px-4 py-4  border-2 rounded-lg text-sm hover:shadow-lg flex-1 md:flex-auto'>
                 Visualización de dislikes
               </div>
