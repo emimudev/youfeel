@@ -23,7 +23,7 @@ It is necessary to set the following environment variables in order to run the a
 
 `NEXT_PUBLIC_YT_KEY_SEARCH` YouTube's API KEY that handles video searches.
 
-`NEXT_PUBLIC_YT_KEY_VIDEO` YouTube's KEY API that retrieves information about a specific video.
+`NEXT_PUBLIC_YT_KEY_VIDEO` YouTube's API KEY that retrieves information about a specific video.
 
 `NEXT_PUBLIC_YT_KEY_COMMENTS` YouTube's API KEY that retrieves the comments of a video.
 
