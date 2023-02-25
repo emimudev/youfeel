@@ -1,6 +1,11 @@
-<picture style="display: flex" >
-  <img style="margin: auto;" src="https://i.im.ge/2023/02/25/7SdHeW.brand.webp" alt="youfeel logo">
-</picture>
+<p align="center">
+  <a href="https://youfeel.vercel.app/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://i.im.ge/2023/02/25/7SqPIW.brand-dark.webp">
+      <img src="https://i.im.ge/2023/02/25/7SqEPL.brand-light.webp" height="128">
+    </picture>
+  </a>
+</p>
 
 <hr/>
 YouFeel is a sentiment analyzer integrated with the YouTube API. The analysis is performed by co:here's AI services. The project is built with Next.js, Tailwindcss, co:here and the YouTube API.
