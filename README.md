@@ -1,14 +1,17 @@
 <p align="center">
   <a href="https://youfeel.vercel.app/">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://i.im.ge/2023/12/29/x3g3Cm.brand-dark.png"/>
-      <img src="https://i.im.ge/2023/12/29/x3gw2D.brand-light.png" height="128" alt="" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://i.ibb.co/GFgT0zc/brand-dark.png"/>
+      <img src="https://i.ibb.co/TYDxRJ0/brand-light.png" height="128" alt="" />
     </picture>
   </a>
-  <h1 align="center">Youfeel</h1>
 </p>
 
-YouFeel is a sentiment analyzer integrated with the YouTube API. The analysis is performed by co:here's AI services. The project is built with Next.js, Tailwindcss, co:here and the YouTube API.
+<hr  />
+
+<p>
+  YouFeel is a sentiment analyzer integrated with the YouTube API. The analysis is performed by co:here's AI services. The project is built with Next.js, Tailwindcss, co:here and the YouTube API.
+</p>
 
 ## Features
 
