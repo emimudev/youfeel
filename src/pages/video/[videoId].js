@@ -12,7 +12,12 @@ import CommentsContextProvider from '@/context/CommentsContext'
 import Alert from '@/components/Alert'
 import { isEmptyComment } from '@/utils/isEmptyComment'
 
-export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commentsInfo }) {
+export default function VideoPage({
+  pageInfo,
+  videoId,
+  relatedVideosInfo,
+  commentsInfo
+}) {
   const videoInfo = pageInfo.items[0]
   const { statistics, snippet } = videoInfo
   const { thumbnails, description, title, channelTitle, tags } = snippet
@@ -21,7 +26,7 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
   const { likeCount, dislikes, viewCount } = statistics
   const totalVotes = +likeCount + dislikes
   const { items: comments } = commentsInfo
-  const validComments = comments.filter(comment => !isEmptyComment(comment))
+  const validComments = comments.filter((comment) => !isEmptyComment(comment))
 
   return (
     <div className='flex p-3 flex-col md:p-6 lg:px-16 '>
@@ -33,9 +38,7 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           />
           <div className='flex flex-col gap-2'>
-            <h1 className='lg:text-xl font-medium line-clamp-2'>
-              {title}
-            </h1>
+            <h1 className='lg:text-xl font-medium line-clamp-2'>{title}</h1>
             <div className='flex flex-wrap gap-2 items-center justify-between'>
               <div className='flex gap-2 p-2 px-2.5 bg-slate-100 rounded-xl'>
                 <Image
@@ -45,29 +48,39 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
                   src={defaultSize.url}
                   alt={channelTitle}
                 />
-                <span className='text-lg self-center'>
-                  {channelTitle}
-                </span>
+                <span className='text-lg self-center'>{channelTitle}</span>
               </div>
               <div className='flex flex-wrap gap-1 items-center'>
                 <VideoStatistic views label='Vistas' count={viewCount} />
-                <VideoStatistic className='text-blue-700' likes label='Likes' count={likeCount} />
-                <VideoStatistic className='text-red-700' dislikes label='Dislikes' count={dislikes} />
+                <VideoStatistic
+                  className='text-blue-700'
+                  likes
+                  label='Likes'
+                  count={likeCount}
+                />
+                <VideoStatistic
+                  className='text-red-700'
+                  dislikes
+                  label='Dislikes'
+                  count={dislikes}
+                />
               </div>
             </div>
             <div className='flex flex-col gap-3'>
-              <LikesComparisonBar dislikePercentaje={(dislikes / totalVotes) * 100} />
+              <LikesComparisonBar
+                dislikePercentaje={(dislikes / totalVotes) * 100}
+              />
               <TagsCollapse tags={tags} />
               <VideoDescription description={description} />
             </div>
           </div>
           <CommentsContextProvider>
             <div className='flex flex-col gap-3'>
-              <span className='font-medium'>
-                Análisis de sentimientos
-              </span>
+              <span className='font-medium'>Análisis de sentimientos</span>
               <Alert variant='info'>
-                El análisis se ha limitado a un máximo de <strong>95 comentarios</strong> para evitar exceder el consumo gratuito de la cuota de la API de YouTube.
+                El análisis se ha limitado a un máximo de{' '}
+                <strong>95 comentarios</strong> para evitar exceder el consumo
+                gratuito de la cuota de la API de YouTube.
               </Alert>
               <StatisticsAI comments={validComments} videoId={videoId} />
               <span className='font-medium'>
@@ -84,38 +97,30 @@ export default function VideoPage({ pageInfo, videoId, relatedVideosInfo, commen
 }
 
 VideoPage.getLayout = function getLayout(page) {
-  return (
-    <PageLayout>
-      {page}
-    </PageLayout>
-  )
+  return <PageLayout>{page}</PageLayout>
 }
 
 export async function getServerSideProps(context) {
   const { videoId } = context.query
-  const [
-    pageInfo,
-    relatedVideos,
-    dislikesInfo,
-    commentsInfo
-  ] = await Promise.allSettled([
-    YoutubeAPI.video({ videoId }),
-    YoutubeAPI.relatedVideos({ videoId }),
-    YoutubeAPI.dislikes({ videoId }),
-    YoutubeAPI.comments({ videoId, maxResults: 95 })
-  ])
+  const [pageInfo, relatedVideos, dislikesInfo, commentsInfo] =
+    await Promise.allSettled([
+      YoutubeAPI.video({ videoId }),
+      YoutubeAPI.relatedVideos({ videoId }),
+      YoutubeAPI.dislikes({ videoId }),
+      YoutubeAPI.comments({ videoId, maxResults: 95 })
+    ])
   if (pageInfo.status === 'fulfilled') {
     pageInfo.value.items[0].statistics.dislikes = dislikesInfo.value?.dislikes
     pageInfo.value.items[0].statistics.rating = dislikesInfo.value?.rating
   }
 
-  console.log([pageInfo, relatedVideos, dislikesInfo, commentsInfo])
+  console.log({ pageInfo, relatedVideos, dislikesInfo, commentsInfo })
 
   return {
     props: {
       videoId,
       pageInfo: pageInfo.value,
-      relatedVideosInfo: relatedVideos.value,
+      relatedVideosInfo: relatedVideos.value || {},
       commentsInfo: commentsInfo.value
     }
   }

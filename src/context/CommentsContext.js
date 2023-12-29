@@ -6,8 +6,8 @@ export default function CommentsContextProvider({ children }) {
   const [classifiedComments, setClassifiedComments] = useState([])
 
   const getCommentByIndex = ({ index }) => {
-    console.log({ [`comment-${index}`]: classifiedComments[index] })
-    console.log({ classifiedComments })
+    // console.log({ [`comment-${index}`]: classifiedComments[index] })
+    // console.log({ classifiedComments })
     return (classifiedComments && classifiedComments?.[index]) || {}
   }
 

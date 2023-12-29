@@ -1,6 +1,7 @@
 import Spinner from '../Spiner'
 
 export default function Button({
+  as = 'button',
   children,
   className = '',
   size = 'auto',
@@ -16,8 +17,9 @@ export default function Button({
   shadow = false,
   ...props
 }) {
+  const Component = as || 'button'
   return (
-    <button
+    <Component
       type='button'
       disabled={disabled}
       className={`
@@ -38,7 +40,7 @@ export default function Button({
       {icon}
       {children}
       {rightIcon}
-    </button>
+    </Component>
   )
 }
 
